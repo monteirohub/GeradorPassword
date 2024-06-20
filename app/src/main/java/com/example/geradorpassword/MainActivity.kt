@@ -29,15 +29,15 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.passwordgenerator.ui.theme.PasswordgeneratorTheme
+import com.example.geradorpassword.ui.theme.GeradorPasswordTheme
 import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            PasswordgeneratorTheme {PasswordGeneratorApp()
-
+            GeradorPasswordTheme {
+                PasswordGeneratorApp()
             }
         }
     }
@@ -122,8 +122,8 @@ fun generatePassword(length: Int): String {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    PasswordgeneratorTheme {PasswordGeneratorApp()
-
+    GeradorPasswordTheme {
+        PasswordGeneratorApp()
     }
 
 }
